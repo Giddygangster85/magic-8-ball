@@ -1,5 +1,3 @@
-let OnOff = 0
-let Answer = 0
 input.onButtonPressed(Button.A, function () {
     OnOff = 0
 })
@@ -32,9 +30,12 @@ input.onGesture(Gesture.Shake, function () {
         basic.showIcon(IconNames.No)
     }
 })
+let Answer = 0
+let OnOff = 0
+OnOff = 1
 basic.forever(function () {
     if (OnOff == 0) {
-        basic.showString("Ask Me Anything and Shake for an answer")
+        basic.showString("Ask Me Anything and Shake For An Answer")
     } else if (OnOff == 1) {
         basic.showIcon(IconNames.No)
     }
